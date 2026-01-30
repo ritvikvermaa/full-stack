@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f5f6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.input-box {
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+.counter {
+    text-align: right;
+    font-size: 13px;
+    margin-top: 8px;
+    color: #555;
+}
+
+/* Warning */
+.counter.warning {
+    color: #f59e0b;
+}
+
+/* Limit reached */
+.counter.danger {
+    color: #ef4444;
+}

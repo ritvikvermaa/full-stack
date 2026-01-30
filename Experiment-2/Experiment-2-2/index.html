@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Products</h2>
+
+    <div class="sort-container">
+        <span class="sort-label">Sort By:</span>
+        <select id="sortSelect">
+            <option value="all">All Items</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+            <option value="name">Name (A-Z)</option>
+        </select>
+    </div>
+
+    <div class="product-grid" id="productGrid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
